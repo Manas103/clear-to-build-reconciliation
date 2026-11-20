@@ -1,0 +1,19 @@
+Generated 12000 PLM items, 21059 BOM lines, 600 work orders, 12000 ERP item-master rows, 3000 open POs.
+Seeded 240 discrepancies across 6 classes.
+Seeded discrepancies caught: 240/240
+  bom_orphan_reference: 40/40
+  invalid_bom_quantity: 40/40
+  on_hand_shortage: 40/40
+  part_number_mismatch: 40/40
+  revision_skew: 40/40
+  uom_mismatch: 40/40
+False positives on 1000 clean records: 0
+Clear-to-build computed for 600 work orders: 523 CLEAR, 77 SHORT
+Reference-oracle diff (explode_fast vs explode_naive), 50 sampled work orders: 0 mismatches
+Incremental sync attempt (60-day history): 1008/60659 rows = 1.6617%
+Incremental sync attempt (90-day history): 671/60659 rows = 1.1062%
+Incremental sync attempt (83-day history): 713/60659 rows = 1.1754%
+Mock Oracle Fusion Cloud SCM REST pull: 500/500 items, 200/200 work orders, paginated offset/limit, hasMore cursor.
+Drill-down proof for shortage WO-000004/P-0004126: 1 work-order row(s), 1 PLM item row(s), 1 on-hand row(s), 1 shortage row(s) resolved via SQL.
+PostgreSQL audit publish: skipped (connection to server at "127.0.0.1", port 5432 failed: timeout expired
+)
